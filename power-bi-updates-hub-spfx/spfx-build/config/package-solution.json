@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "power-bi-updates-hub-client-side-solution",
+    "id": "b8f2f6b0-1e3b-4a6d-9f2a-6a2c9d4b7e10",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "Analytics Team",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "Power BI Updates Hub — board web part"
+      },
+      "longDescription": {
+        "default": "Displays updates, glitches, requests, launches, and overhauls for Power BI reports, backed by a SharePoint list."
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "Power BI Updates Hub Feature",
+        "description": "Installs the Power BI Updates Hub web part.",
+        "id": "e3d1a2c4-5f6b-47a8-9c1d-2b3e4f5a6b7c",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/power-bi-updates-hub.sppkg"
+  }
+}

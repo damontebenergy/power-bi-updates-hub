@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "power-bi-updates-hub-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/powerBiUpdatesHub/PowerBiUpdatesHubWebPart.js",
+          "manifest": "./src/webparts/powerBiUpdatesHub/PowerBiUpdatesHubWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "PowerBiUpdatesHubWebPartStrings": "lib/webparts/powerBiUpdatesHub/loc/{locale}.js"
+  }
+}

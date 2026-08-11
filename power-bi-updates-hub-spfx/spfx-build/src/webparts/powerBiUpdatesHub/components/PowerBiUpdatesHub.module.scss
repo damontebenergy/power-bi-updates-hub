@@ -1,0 +1,156 @@
+.hub {
+  font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+  color: #242424;
+}
+
+.commandBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+
+.pageHeading {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.pageSub {
+  font-size: 13px;
+  color: #616161;
+  margin: 2px 0 0;
+}
+
+.searchBox {
+  border: 1px solid #d2d0ce;
+  border-radius: 2px;
+  padding: 6px 10px;
+  font-size: 13px;
+  min-width: 220px;
+}
+
+.statsRow {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.statCard {
+  background: #fff;
+  border: 1px solid #edebe9;
+  border-radius: 2px;
+  padding: 14px 16px;
+}
+
+.statLabel {
+  font-size: 12px;
+  color: #616161;
+}
+
+.statValue {
+  font-size: 26px;
+  font-weight: 600;
+  margin-top: 2px;
+}
+
+.statValueDanger {
+  composes: statValue;
+  color: #a80000;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 190px minmax(0, 1fr);
+  gap: 20px;
+}
+
+.filterTitle {
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: #8a8886;
+  margin: 0 0 6px;
+  padding: 0 4px;
+}
+
+.filterOption {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 7px 8px;
+  border-radius: 2px;
+  font-size: 13px;
+  color: #616161;
+  cursor: pointer;
+
+  &:hover {
+    background: #edebe9;
+  }
+}
+
+.filterOptionActive {
+  composes: filterOption;
+  background: #deecf9;
+  color: #0078d4;
+  font-weight: 600;
+}
+
+.listContainer {
+  background: #fff;
+  border: 1px solid #edebe9;
+  border-radius: 2px;
+}
+
+.itemRow {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 14px 16px;
+  border-bottom: 1px solid #edebe9;
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  &:hover {
+    background: #f3f2f1;
+  }
+}
+
+.tag {
+  font-size: 11px;
+  padding: 2px 9px;
+  border-radius: 2px;
+  font-weight: 600;
+}
+
+.tagUpdate { composes: tag; background: #dff6dd; color: #107c10; }
+.tagGlitch { composes: tag; background: #fde7e9; color: #a80000; }
+.tagRequest { composes: tag; background: #fff4ce; color: #8a6d00; }
+.tagLaunch { composes: tag; background: #f1e9fa; color: #5c2e91; }
+.tagOverhaul { composes: tag; background: #deecf9; color: #0056a8; }
+
+.priorityDot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.priorityHigh { composes: priorityDot; background: #a80000; }
+.priorityMedium { composes: priorityDot; background: #8a6d00; }
+.priorityLow { composes: priorityDot; background: #8a8886; }
+
+.emptyState {
+  padding: 40px 16px;
+  text-align: center;
+  color: #8a8886;
+  font-size: 13px;
+}
